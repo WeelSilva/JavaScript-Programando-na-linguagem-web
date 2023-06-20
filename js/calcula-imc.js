@@ -1,1 +1,2 @@
-console.log(document.querySelector("h1"));
+var titulo = document.querySelector("titulo");
+titulo.textContent = "Gabriela Ouro Nutricionista";
