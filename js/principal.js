@@ -16,7 +16,7 @@ var tdImc = paciente.querySelector(".info-imc");
 var pesoValido = true;
 var alturaValida = true;
 
-if(peso <= 0 || peso >= 1000){
+if(peso <= 0 || peso >= 500){
     console.log("Peso inválido!");
     pesoValido = false;
     tdImc.textContent = "Peso inválido!";
@@ -25,6 +25,7 @@ if(peso <= 0 || peso >= 1000){
 if(altura <= 0 || altura >= 3.00){
     console.log("Altura inválida!");
     alturaValida = false;
+    tdImc.textContent = "Altura inválida!";
 }
 
 if(pesoValido && alturaValida){
