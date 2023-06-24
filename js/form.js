@@ -47,3 +47,6 @@ function montaTd(dado, classe) {
 
   return td;
 }
+
+//encerrando aula hoje 24/06/2023//
+
