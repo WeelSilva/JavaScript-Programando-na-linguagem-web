@@ -1,2 +1,2 @@
 # JavaScript-Programando-na-linguagem-web
-Curso de JavaScript
+Curso de JavaScript atraves da plataforma alura.
