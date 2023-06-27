@@ -9,6 +9,14 @@ botaoAdicionar.addEventListener("click", function (event) {
 
   var pacienteTr = montaTr(paciente);
 
+  var erro = validaPaciente(paciente);
+
+  if(erro.length > 0){
+    var mensagemErro = document.querySelector("#mensagem-erro");
+    mensagemErro.textContent = erro;
+    return;
+  }
+
   var tabela = document.querySelector("#tabela-pacientes");
 
   tabela.appendChild(pacienteTr);
@@ -48,5 +56,14 @@ function montaTd(dado, classe) {
   return td;
 }
 
-//encerrando aula hoje 24/06/2023//
+function validaPaciente(paciente){
+  if(validaPeso(paciente.peso)){
+    return "";
+  }else{
+    return "O Peso é inválido";
+  }
+}
+
+
+
 
