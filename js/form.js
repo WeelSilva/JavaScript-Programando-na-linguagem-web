@@ -57,13 +57,34 @@ function montaTd(dado, classe) {
 }
 
 function validaPaciente(paciente){
-  if(validaPeso(paciente.peso)){
-    return "";
-  }else{
-    return "O Peso é inválido";
-  }
-}
+  var erros = [];
 
+  if(paciente.nome.length == 0){
+    erros.push("O nome não pode ser em branco");
+  }
+
+  if(!validaPeso(paciente.peso)){
+    erros.push("Peso é inválido");
+  }
+
+  if(!validaAltura(paciente.altura)){
+    erros.push("Altura é inválida");
+  }
+
+  if(paciente.gordura.length == 0){
+    erros.push("A gordura não pode ser em branco");
+  }
+
+  if(paciente.peso.length == 0){
+    erros.push("O peso não pode ser em branco");
+  }
+
+  if(paciente.altura.length == 0){
+    erros.push("A altura não pode ser em branco");
+  }
+
+  return erros;
+}
 
 
 
