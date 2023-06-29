@@ -1,9 +1,9 @@
-var botaoAdicionar = document.querySelector("#buscar-pacientes");
+var botaoAdicionar = document.querySelector("#buscar-paciente");
 
 botaoAdicionar.addEventListener("click", function () {
   var xhr = new XMLHttpRequest(); // Cria um objeto do tipo XMLHttpRequest
 
-  xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes"); // Abre uma conexão com o endereço do servidor
+  xhr.open("GET", "https://raw.githubusercontent.com/loresgarcia/Pacientes-API/master/pacientes.json"); // Abre uma conexão com o endereço do servidor
 
   xhr.addEventListener("load", function () {
     // Adiciona um evento de carregamento
