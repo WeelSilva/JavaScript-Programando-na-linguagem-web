@@ -14,7 +14,7 @@ botaoAdicionar.addEventListener("click", function () {
       var pacientes = JSON.parse(resposta); // Transforma a resposta em um array de objetos
 
       pacientes.forEach(function (paciente) {
-        // Percorre o array de objetos
+
         adicionaPacienteNaTabela(paciente); // Adiciona o paciente na tabela
       });
     } else {
